@@ -23,6 +23,9 @@ jobs:
           touch name.txt
           rm name.txt
           sh -c 'ls -d -- "$@" > name.txt' sh .bin/*.jar
+
+          git config --global user.name "Github Actions"
+          git config --global user.email "<EMAIL>"
           git add .
           git commit -m "update version number"
           git push
