@@ -18,7 +18,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v4
       
-      - name: Edit and push file
+      - name: Edit and commit files
         run: |
           touch name.txt
           rm name.txt
@@ -28,7 +28,11 @@ jobs:
           git config --global user.email "<EMAIL>"
           git add .
           git commit -m "update version number"
-          git push
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            
 
 
 
