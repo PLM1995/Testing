@@ -1,0 +1,31 @@
+# Updates the version number
+#
+# Triggerd by:
+# push to main
+#
+
+name: Update Version
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      
+      - name: Edit and push file
+        run: |
+          touch name.txt
+          rm name.txt
+          sh -c 'ls -d -- "$@" > name.txt' sh .bin/*.jar
+          git add .
+          git commit -m "update version number"
+          git push
+
+
+
