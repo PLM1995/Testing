@@ -29,12 +29,6 @@ jobs:
       - name: Copy Website
         run: cp -r root/website .
 
-      - name: check struct
-        run: |
-          cd root
-          ls -la
-          cd ..
-
       - name: Setup Git user
         run: |
           cd root
@@ -45,6 +39,7 @@ jobs:
         run: |
           cd root
           git switch website
+          cp -r ../website .
           git add .
           git commit -m "Update Website"
           git push -u origin +website
