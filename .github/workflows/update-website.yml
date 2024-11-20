@@ -40,10 +40,6 @@ jobs:
         with: 
           fetch-depth: 0
           path: web
-      
-      
-      - name: Update Files
-        run: cp -r website web
 
       - name: Setup Git user
         run: |
@@ -53,6 +49,8 @@ jobs:
       
       - name: Commit files
         run: |
+          git checkout website
+          cp -r ../website .
           git add .
           git commit -m "Update Website"
           git push -u origin +website
