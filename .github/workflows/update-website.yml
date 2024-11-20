@@ -43,6 +43,7 @@ jobs:
       
       - name: Commit files
         run: |
+          pwd
           git checkout website
           git add .
           git commit -m "Update Website"
