@@ -25,14 +25,7 @@ jobs:
         with: 
           fetch-depth: 0
           path: root
-
-  
-
-      - name: Setup Git user
-        run: |
-          git config user.name "Github Actions"
-          git config user.email "<EMAIL>"
-      
+    
       - name: Copy Website
         run: cp -r root/website .
 
@@ -51,10 +44,15 @@ jobs:
       
       - name: Update Files
         run: cp -r website web
+
+      - name: Setup Git user
+        run: |
+          cd web
+          git config user.name "Github Actions"
+          git config user.email "<EMAIL>"
       
       - name: Commit files
         run: |
-          cd web
           git add .
           git commit -m "Update Website"
           git push -u origin +website
