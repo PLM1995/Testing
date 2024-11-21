@@ -6,6 +6,8 @@ Here is table
 
 Here is a HTML Page or two
 
+{% include EGGD_Crib.html %}
+
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
