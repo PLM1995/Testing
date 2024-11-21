@@ -6,7 +6,7 @@ Here is table
 
 Here is a HTML Page or two
 
-{% EGGD_Crib.html %}
+{% include EGGD_Crib.html %}
 
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
