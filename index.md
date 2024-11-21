@@ -6,8 +6,6 @@ Here is table
 
 Here is a HTML Page or two
 
-{% include EGGD_Crib.html %}
-
 <html xmlns:v="urn:schemas-microsoft-com:vml"
 xmlns:o="urn:schemas-microsoft-com:office:office"
 xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
@@ -30,32 +28,32 @@ b\:* {behavior:url(#default#VML);}
 <!--
  /* Font Definitions */
 @font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
+  {font-family:Calibri;
+  panose-1:2 15 5 2 2 2 4 3 2 4;}
 @font-face
-	{font-family:Arial;
-	panose-1:2 11 6 4 2 2 2 2 2 4;}
+  {font-family:Arial;
+  panose-1:2 11 6 4 2 2 2 2 2 4;}
  /* Style Definitions */
 p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-right:0pt;
-	text-indent:0pt;
-	margin-top:0pt;
-	margin-bottom:6.0pt;
-	line-height:119%;
-	text-align:left;
-	font-family:Calibri;
-	font-size:10.0pt;
-	color:black;}
+  {margin-right:0pt;
+  text-indent:0pt;
+  margin-top:0pt;
+  margin-bottom:6.0pt;
+  line-height:119%;
+  text-align:left;
+  font-family:Calibri;
+  font-size:10.0pt;
+  color:black;}
 ol
-	{margin-top:0in;
-	margin-bottom:0in;
-	margin-left:-2197in;}
+  {margin-top:0in;
+  margin-bottom:0in;
+  margin-left:-2197in;}
 ul
-	{margin-top:0in;
-	margin-bottom:0in;
-	margin-left:-2197in;}
+  {margin-top:0in;
+  margin-bottom:0in;
+  margin-left:-2197in;}
 @page
-	{size:8.-2019in 11.2232in;}
+  {size:8.-2019in 11.2232in;}
 -->
 </style>
 <!--[if gte mso 9]><xml>
